@@ -1,0 +1,17 @@
+{
+    "name": "Scene",
+    "rootNamespace": "Splatrika.Asteroids.Scene",
+    "references": [
+        "GUID:4866392272ced4656b61b4713a6d9c57",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
