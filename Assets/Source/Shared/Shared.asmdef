@@ -1,11 +1,8 @@
 {
-    "name": "Scene",
-    "rootNamespace": "Splatrika.Asteroids.Scene",
+    "name": "Shared",
+    "rootNamespace": "Splatrika.Asteroids.Shared",
     "references": [
-        "GUID:4866392272ced4656b61b4713a6d9c57",
-        "GUID:2165a46e2443941059be36ade00de7a0",
-        "GUID:af54a95fac1154726b0485bee3ad6a2b",
-        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
+        "GUID:4866392272ced4656b61b4713a6d9c57"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
