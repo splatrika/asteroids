@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using Splatrika.Asteroids.Model;
 using UnityEngine;
+using Zenject;
 
 namespace Splatrika.Asteroids.Scene
 {
@@ -17,7 +16,8 @@ namespace Splatrika.Asteroids.Scene
         [SerializeField]
         private Camera _camera;
 
-        void Start()
+        [Inject]
+        public void Init()
         {
             var width = _camera.aspect * _camera.orthographicSize;
             var height = _camera.orthographicSize;
