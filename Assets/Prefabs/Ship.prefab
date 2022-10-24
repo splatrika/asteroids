@@ -158,7 +158,7 @@ MonoBehaviour:
   _deceleration: 0.025
   _movementSpeed: 0.05
   _rotationSpeed: 6
-  _gunRegenerationTime: 0
+  _gunRegenerationTime: 0.1
 --- !u!114 &2263595022764863297
 MonoBehaviour:
   m_ObjectHideFlags: 0
