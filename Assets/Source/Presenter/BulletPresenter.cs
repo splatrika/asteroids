@@ -34,12 +34,12 @@ namespace Splatrika.Asteroids.Presenter
         }
 
 
-        private void OnCollisionEnter2D(Collision2D collision)
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            if (collision.otherRigidbody
-                .TryGetComponent(out KickablePresenter kickable))
+            if (other.TryGetComponent(out KickablePresenter kickable))
             {
                 kickable.Kick(_bullet);
+                _bullet.Hit();
             }
         }
 
