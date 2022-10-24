@@ -13,12 +13,18 @@ namespace Splatrika.Asteroids.Scene
         [SerializeField]
         private BulletsService _bulletsService;
 
+        [SerializeField]
+        private PlayerPositionProvider _playerPositionProvider;
+
+
         public override void InstallBindings()
         {
             Container.Bind<ILogger>()
                 .FromInstance(Debug.unityLogger);
             Container.Bind<IScreen>()
                 .FromInstance(_screen);
+            Container.Bind<IPlayerPositionProvider>()
+                .FromInstance(_playerPositionProvider);
             Container.Bind<IBulletsService>()
                 .FromInstance(_bulletsService);
         }
