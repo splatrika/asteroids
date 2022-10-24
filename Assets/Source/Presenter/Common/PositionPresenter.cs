@@ -16,6 +16,8 @@ namespace Splatrika.Asteroids.Presenter
             _position = position;
             _transform = transform;
             _position.Moved += OnMoved;
+
+            transform.position = _position.Position;
         }
 
 
