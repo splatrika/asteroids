@@ -37,7 +37,7 @@ namespace Splatrika.Asteroids.Model
             _timeLeft -= deltaTime;
             if (_timeLeft <= 0)
             {
-                var spawnerIndex = Random.Range(0, _spawners.Count - 1);
+                var spawnerIndex = Random.Range(0, _spawners.Count);
                 _spawners[spawnerIndex].Spawn();
                 _timeLeft = _frequency;
             }
